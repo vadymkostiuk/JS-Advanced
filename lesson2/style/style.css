@@ -20,7 +20,7 @@ body {
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 2px rgb(30 103 176 / 67%);
+    box-shadow: 0px 0px 10px 2px rgb(30 103 176);
 }
 
 #current-weather-details {
@@ -64,13 +64,22 @@ body {
     font-weight: bold;
     color: #4AC2E6;
     margin-top: 10px;
-    
 }
 #get-weather {
     margin-top: 52px;
     
 }
-input {
+#city-weather-name {
     border: 2px solid black;
-    padding: 5px;
+    padding: 10px;
+}
+#rules p {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 20px;
+}
+#rules span {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0a520ddb;;
 }
