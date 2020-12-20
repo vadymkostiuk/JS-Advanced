@@ -12,12 +12,12 @@ function booWho(bool) {
   }
 }
 
-console.log(booWho(null));
+booWho(null);
 
   // Method2
 
-  function booWho(bool) {
-    return typeof(bool) === "boolean"
-  }
+function booWho(bool) {
+  return typeof(bool) === "boolean"
+}
   
-  console.log(booWho(null));
+booWho(null);

@@ -13,7 +13,7 @@ function truncateString(str, num) {
 
   }
   
-  console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
 
   // Method2
 
@@ -27,4 +27,4 @@ function truncateString(str, num) {
       
   }
   
-  console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+truncateString("A-tisket a-tasket A green and yellow basket", 8);

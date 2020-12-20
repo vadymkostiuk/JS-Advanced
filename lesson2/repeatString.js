@@ -14,7 +14,7 @@ function repeatStringNumTimes(str, num) {
     return newStr;
   }
   
-  console.log(repeatStringNumTimes("abc", 3));
+repeatStringNumTimes("abc", 3);
 
 // Method2
 
@@ -22,4 +22,4 @@ function repeatStringNumTimes(str, num) {
     return num > 0 ? Array(num).fill(str).join("") : "";
   }
   
-  console.log(repeatStringNumTimes("abc", 3));
+repeatStringNumTimes("abc", 3);
