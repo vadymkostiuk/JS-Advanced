@@ -10,6 +10,6 @@ function titleCase(str){
   }
 
   return str.join(' ');
-};
+}
 
 titleCase("I'm a little tea pot");
