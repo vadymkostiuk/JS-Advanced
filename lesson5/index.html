@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <title>Image File Uploader</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<div class="container-img">
+    <h1 class="title">Your Image Uploader</h1>
+    <p class="sub_title">You can upload any image you want</p>
+    <input type="file" id="uploader" style="display: none" multiple accept="image/*">
+    <label for="uploader" id="uploaderLabel">Select a file ...</label>
+    <ul class="images"></ul>
+</div>
+<div id="modal-window">
+    <p>Are you sure you want to delete this image?</p>
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+</div>
+<div id="progress_bar">
+    <div class="percent">
+        0%
+    </div>
+</div>
+<script src="./displayImages.js"></script>
+<script src="./deleteImages.js"></script>
+<script src="./editNameImages.js"></script>
+<script src="./saveNameImages.js"></script>
+<script src="./scaleImage.js"></script>
+<script src="./playground.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.title {
+    padding-top: 40px;
+}
+.sub_title {
+    padding: 10px 0 10px 0;
+}
+button:hover {
+    cursor: pointer;
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3 , 2fr);
+    width: 93%;
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.images li {
+    list-style-type: none;
+}
+.images li .img {
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    border: 5px solid black;
+}
+.img {
+    transition: .3s all;
+}
+.remove-button, #uploaderLabel {
+    background-color: darkorange;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+    outline: none;
+    padding: 6px 14px;
+    margin-top: 8px;
+}
+.remove-button {
+    font-size: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+.edit-button, .save-button {
+    background-color: darkorange;
+    border: 2px solid black
+}
+.edit-button img, .save-button img, .remove-button img {
+    width: 25px;
+}
+.save-button {
+    display: none;
+}
+figcaption p {
+    margin: 5px;
+    padding: 5px 10px;
+}
+.scale-img {
+    transition: .3s all;
+    transform: scale(2);
+    z-index: 1;
+}
+#modal-window {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: darkorange;
+    border: 3px solid black;
+
+}
+#modal-window p {
+    font-size: 28px;
+    font-weight: 500;
+}
+#modal-window button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    font-size: 25px;
+}
+#modal-window button:nth-child(2) {
+    background-color: #d51e1e;
+    margin-bottom: 20px;
+}
+#modal-window button:nth-child(3) {
+    background-color: #3897ad;
+}
+#progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+#progress_bar.loading {
+    opacity: 1.0;
+}
+#progress_bar .percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
+}
