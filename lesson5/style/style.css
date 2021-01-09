@@ -32,24 +32,14 @@ button:hover {
 .img {
     transition: .3s all;
 }
-.remove-button, #uploaderLabel {
+.remove-button, #uploaderLabel, .edit-button, .save-button {
+    padding: 2px 2px;
     background-color: darkorange;
     color: white;
     border: 2px solid black;
     border-radius: 5px;
     font-family: 'Source Code Pro', monospace;
     outline: none;
-    padding: 6px 14px;
-    margin-top: 8px;
-}
-.remove-button {
-    font-size: 20px;
-    padding: 0;
-    font-weight: bold;
-}
-.edit-button, .save-button {
-    background-color: darkorange;
-    border: 2px solid black
 }
 .edit-button img, .save-button img, .remove-button img {
     width: 25px;
@@ -60,10 +50,12 @@ button:hover {
 figcaption p {
     margin: 5px;
     padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .scale-img {
     transition: .3s all;
-    transform: scale(2);
+    transform: scale(2.5);
     z-index: 1;
 }
 #modal-window {
@@ -78,7 +70,6 @@ figcaption p {
     height: 300px;
     background-color: darkorange;
     border: 3px solid black;
-
 }
 #modal-window p {
     font-size: 28px;
@@ -97,24 +88,23 @@ figcaption p {
     margin-bottom: 20px;
 }
 #modal-window button:nth-child(3) {
-    background-color: #3897ad;
+    background-color: darkorange;
 }
 #progress_bar {
     margin: 10px 0;
     padding: 3px;
-    border: 1px solid #000;
-    font-size: 14px;
+    border: 3px solid #000;
+    font-size: 20px;
+    font-weight: bold;
     clear: both;
     opacity: 0;
-    -moz-transition: opacity 1s linear;
-    -o-transition: opacity 1s linear;
-    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
 }
 #progress_bar.loading {
     opacity: 1.0;
 }
 #progress_bar .percent {
-    background-color: #99ccff;
+    background-color: darkorange;
     height: auto;
     width: 0;
 }

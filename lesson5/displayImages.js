@@ -16,4 +16,38 @@ function displayImages(images, imagesList) {
             
         `
   }).join('');
+
+  function updateProgress(event) {
+
+    if (event.lengthComputable) {
+      var percentLoaded = Math.round((event.loaded / event.total) * 100);
+
+      if (percentLoaded < 100) {
+        progress.style.width = percentLoaded + '%';
+        progress.textContent = percentLoaded + '%';
+      }
+    }
+  }
+
+  function handleFileSelect(event) {
+    progress.style.width = '0%';
+    progress.textContent = '0%';
+    reader = new FileReader();
+
+    reader.onprogress = updateProgress;
+
+    reader.onloadstart = function(e) {
+      document.getElementById('progress_bar').className = 'loading';
+    };
+
+    reader.onload = function(e) {
+      progress.style.width = '100%';
+      progress.textContent = '100%';
+      setTimeout("document.getElementById('progress_bar').className='';", 2000);
+    }
+
+    reader.readAsDataURL(event.target.files[0]);
+  }
+
+  uploader.addEventListener('change', handleFileSelect, false);
 }

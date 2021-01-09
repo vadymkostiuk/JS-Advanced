@@ -50,10 +50,11 @@ function deleteItem (event) {
   modalWindow.style.display = "flex";
 
   btnYes.addEventListener('click', function(){
-      event.target.parentNode.remove()
-      modalWindow.style.display = "none";
-      items.splice(targetData, 1);
-      localStorage.setItem('items', JSON.stringify(items));
+    event.target.parentNode.remove()
+    modalWindow.style.display = "none";
+    items.splice(targetData, 1);
+    localStorage.setItem('items', JSON.stringify(items));
+    window.location.reload()
   });
 
   btnNo.addEventListener('click', function () {

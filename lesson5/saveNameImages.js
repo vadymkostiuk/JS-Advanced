@@ -1,12 +1,11 @@
-
-
 function saveImage (event) {
-  var index = event.target.parentElement.parentElement.parentElement.dataset.liIndex;
-  var innerValue = event.target.parentElement.parentElement.children[1].children[0].innerText;
-  var nameSplitName = `.${innerValue.split('.')[1]}`;
-  var nameSplitExtension = `${innerValue.split('.')[0]}`;
 
   if (event.target && event.target.classList.contains('save-button-img')) {
+    var index = event.target.parentElement.parentElement.parentElement.dataset.liIndex;
+    var innerValue = event.target.parentElement.parentElement.children[1].children[0].innerText;
+    var nameSplitName = `.${innerValue.split('.')[1]}`;
+    var nameSplitExtension = `${innerValue.split('.')[0]}`;
+
     event.target.parentElement.parentElement.children[1].children[0].setAttribute("contenteditable", "false");
     event.target.parentElement.style.display = "none";
     event.target.parentElement.parentElement.children[3].style.display = "inline-block";
