@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+    <section id="current-weather-details">
+        <p id="weather-summary"></p>
+        <ul>
+            <li id="humidity">--</li>
+            <li id="pressure">--</li>
+            <li id="temperature">--</li>
+            <li id="wind-speed">--</li>
+        </ul>
+        <p id="current-weather">--</p>
+        <button id="get-weather">Get current weather</button>
+    </section>
+
+    <section id="current-weather-details-city">
+        <p id="weather-summary-city"></p>
+        <ul>
+            <li id="humidity-city">--</li>
+            <li id="pressure-city">--</li>
+            <li id="temperature-city">--</li>
+            <li id="wind-speed-city">--</li>
+        </ul>
+            <p id="current-weather-city">--</p>
+            <p  contenteditable id="city-weather-name"></p>
+            <button id="get-weather-city">Weather in the city</button>
+    </section>
+    <div id="rules">
+        <p>Назовите <span>Город</span>, после этого скажите <span>"Погода"</span></p>
+    </div>
+
+    
+    <script src="weather.js"></script>
+    <script src="confirmTheEnding.js"></script>
+    <script src="repeatString.js"></script>
+    <script src="truncateString.js"></script>
+    <script src="findersKeepers.js"></script>
+    <script src="booWho.js"></script>
+
+</body>
+</html>
